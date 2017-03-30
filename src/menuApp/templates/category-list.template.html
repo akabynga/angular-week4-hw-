@@ -1,0 +1,20 @@
+<div class='jumbotron'>
+    <ul>
+        <li class="media list-group-item" ng-repeat="item in $ctrl.items"
+            ui-sref="categoryItemsList({categoryShortName: item.short_name})">
+            {{item.short_name}}
+            <div class="container">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Name</label>
+                    <p class="col-sm-10 text-justify">{{item.name}}</p>
+                </div>
+                <div class="form-group" ng-if='item.special_instructions!==undefined && item.special_instructions!==""'>
+                    <label class="col-sm-2 control-label">Instructions:</label>
+                    <p class="col-sm-10 text-justify">{{item.special_instructions}}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+

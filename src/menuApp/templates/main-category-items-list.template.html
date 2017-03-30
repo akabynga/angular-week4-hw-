@@ -1,0 +1,11 @@
+<div>
+    <ol class="breadcrumb">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="categoryList">Category List</a></li>
+        <li><a class="active">'{{categoryItemsList.category.name}}' Category</a></li>
+    </ol>
+</div>
+<div class="container">
+    <h3>Category '{{categoryItemsList.category.name}}':</h3>
+    <category-items-list items="categoryItemsList.items"></category-items-list>
+</div>

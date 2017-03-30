@@ -9,7 +9,6 @@
     CategoryItemsListController.$inject = ['items'];
     function CategoryItemsListController(items) {
         var categoryItemsList = this;
-        console.log(items.data);
         categoryItemsList.items = items.data.menu_items;
         categoryItemsList.category = items.data.category;
     };

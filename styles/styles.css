@@ -60,7 +60,7 @@ input[type="text"] {
     border: 1px transparent solid;
 }
 
-.list-group-item:hover {
+.list-group-item:hover.category {
     border: 1px #5bc0de solid;
     cursor: pointer;
 }
